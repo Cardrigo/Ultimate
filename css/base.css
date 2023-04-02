@@ -11,6 +11,7 @@
 .maketforfigma p {
     color: #98a6ad;
     text-decoration: none;
+    margin-top: 15px;
     letter-spacing: .01875rem;
     font-size: .775rem;
     padding: 0 10px;

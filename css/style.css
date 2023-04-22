@@ -23,16 +23,17 @@
 }
 
 .header {
-  width: 100%;
   height: auto;
 }
 .header__top {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 100px;
 }
 .header__bottom {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,8 +84,9 @@
   padding: 0px 55px;
 }
 .header .container {
-  max-width: 1280px;
+  max-width: 1310px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 .header-search {
   border-right: 1px solid var(--black);
@@ -133,8 +135,14 @@
   width: 111px;
   text-align: center;
 }
+@media (max-width: 1046px) {
+  .header__block {
+    display: none;
+  }
+}
 .header__cont {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 100px;
 }
@@ -183,7 +191,6 @@
   flex-direction: column;
 }
 .header__buttons__title {
-  max-width: 489px;
   font-family: "Jost";
   font-style: normal;
   font-weight: 400;
